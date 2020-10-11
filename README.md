@@ -165,6 +165,14 @@ Add `[Tooltip("text")]` on top of a field to add a text appear when hovered over
 
 Add `[Header("text")]` on top of a field to add a bold text header over current field in the inspector
 
+### Require Component
+
+Add `[RequireComponent(typeof(Rigidbody))]` on top of the class to automatically add the `Rigidbody` (or any other component) to the game object
+
+### Selection Base
+
+Add `[SelectionBase]` on top of the class to force the scene view to mark the game object that has any script with this attribute to be always selected first (without taking any child or parent objects)
+
 ### Naughty Attributes
 
 Use [Naughty Attributes](https://github.com/dbrizov/NaughtyAttributes) to add even more useful attributes to your inspector 
@@ -181,6 +189,7 @@ Implement a `void OnDrawGizmos(){//Gizmo code}` or `void OnDrawGizmosSelected(){
 ## String Interpolation
 
 Instead of writing `Debug.Log("Speed: " + speed);` use a C# string interpolation feature: `Debug.Log($"Speed: {speed}");`. Use it to format a string anywhere in the code
+
 
 # Yes
 
