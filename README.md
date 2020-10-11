@@ -173,6 +173,10 @@ Add `[RequireComponent(typeof(Rigidbody))]` on top of the class to automatically
 
 Add `[SelectionBase]` on top of the class to force the scene view to mark the game object that has any script with this attribute to be always selected first (without taking any child or parent objects)
 
+### DisallowMultipleComponent
+
+Add `[DisallowMultipleComponent]` on top of the class to prevent the duplicates of current component on single game object (does not prevent adding current component on other game objects)
+
 ### Naughty Attributes
 
 Use [Naughty Attributes](https://github.com/dbrizov/NaughtyAttributes) to add even more useful attributes to your inspector 
