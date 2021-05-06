@@ -5,7 +5,7 @@ using UnityEditor.SceneManagement;
 
 public class SimpleProceduralLevelCreator : EditorWindow
 {
-    [MenuItem("Window/My Window")]
+    [MenuItem("Procedural/Level Creator")]
     public static void ShowWindow()
     {
         GetWindow(typeof(SimpleProceduralLevelCreator));
